@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8"/>
+	<title>JQuery - Gwent</title>
+	
+	<meta name = "descryption" content="Js Memory Game inspired by Gwent">
+	<meta name="keywords" content="javascript, jQuery, game, gwent, memory">
+	<meta name="author" content="MS" >
+	
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge, chrome=1">
+	
+	<link rel="stylesheet" href="style.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+	
+	<header>
+		<h1>Gwent Memory Test</h1>
+		<p>Inspired by <a href="https://www.playgwent.com/pl" target="_blank">Gwent - The Witcher Card Game</a></p>
+	</header>
+	
+	<main>
+		<article>
+			<div class ="player" id = "player1">Player 1 <br/>
+				<div class="portrait" id="portrait1"></div> <br/> 
+				<span id="timer1"></span> <br/>
+				<span id="score1">Timer:  00:00</span>  
+			</div>
+			<div class ="player" id = "player2">Player 2 <br/> 
+				<div class="portrait" id="portrait2"></div> <br/>
+				<span id="timer2"></span><br/>
+				<span id="score2">Timer:  00:00</span> 
+			</div>
+			<div class ="board"></div>
+		</article>
+	</main>
+	
+	<script src="jQuery.js"> </script>
+	<script src="script.js"> </script>
+
+</body>
+</html>

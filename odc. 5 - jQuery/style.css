@@ -1,0 +1,148 @@
+body{
+	height: 100%;
+	background: radial-gradient(circle, #06080E 60%, #36383E 100%) fixed;
+	color: #209781;
+	font-family: 'Lobster', cursive;
+	font-size: 28px;
+	text-align: center;
+}
+
+a:link		{color: #209781; text-decoration: none;}
+a:visited	{color: #209781; }
+a:active	{color: #209781; }
+a:hover	{color: #E9B64A; }
+
+h1{
+	font-size: 64px;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 20px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+p{
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 25px;
+	letter-spacing: 2px;
+}
+
+.board{
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.cardStyle{
+	width: 125px;
+	height: 125px;
+	display: inline-block;
+	margin: 3px;
+	background-image: url("img/karta.jpg");
+	border: 4px outset #51C8B2;
+	cursor: pointer;
+	filter: brightness(70%);
+	transition: all .3s ease-in-out;
+}
+
+.cardStyle:hover{
+	border: 4px outset #E9B64A;
+	filter: brightness(100%);
+}
+
+.cardA{
+	--angle: 0deg;
+	width: 125px;
+	height: 125px;
+	display: inline-block;
+	margin: 3px;
+	cursor: default;
+	filter: brightness(100%);
+	transition: all .3s ease-in-out;
+	
+	border: 4px solid #E9B64A;
+	border-image: conic-gradient(from var(--angle), #51C8B2, #E9B64A, #51C8B2) 1;
+	animation: 2s rotate linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.statistics{
+	margin-top:5px;
+	letter-spacing: 2px;
+}
+
+.option{
+	margin:20px;
+	padding: 10px;
+	font-size: 48px;
+	border: outset 4px #209781;
+	letter-spacing:2px;
+	cursor: pointer;
+}
+
+.option:hover{
+	color:  #E9B64A;
+	border: outset 4px #E9B64A;
+}
+
+.option:active{
+	border: inset 4px #E9B64A;
+}
+
+.player
+{
+	width: 270px;
+	height: 350px;
+	margin: 10px;
+	position: fixed;
+	top:20%;
+	opacity: 0.0;
+	transition: all .5s ease-in-out;
+}
+
+#player1
+{
+	left: 5%;
+	color: #51C8F2;
+}
+
+#player2
+{
+	right: 5%;
+	color: #F24C51;
+}
+
+.portrait
+{
+	width: 250px;
+	height: 250px;
+	border-radius:100%;
+}
+
+#portrait1
+{
+	background-image: url("img/p1.jpg");
+	border: 4px outset #51C8F2;
+}
+
+#portrait2
+{
+	background-image: url("img/p2.jpg");
+	border: 4px outset #F24C51;
+}
+
+
+
